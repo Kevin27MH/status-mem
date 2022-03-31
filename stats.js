@@ -1,4 +1,5 @@
 const os = require('os')
+const log = require('./logger')
 
 setInterval(() => {
     const {freemem, totalmem} = os
@@ -16,7 +17,7 @@ setInterval(() => {
 console.clear()
 console.log("====STATUS DO PC DO KEV===")
 console.table(stats)
+log('Rodando...')
 }, 1000)
 
 
-//console.log(`${parseInt(freemem() / 1024 / 1024)} MB`, totalmem())
