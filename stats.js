@@ -17,7 +17,8 @@ setInterval(() => {
 console.clear()
 console.log("====STATUS DO PC DO KEV===")
 console.table(stats)
-log('Rodando...')
+
+log(`${JSON.stringify(stats)}\n`)
 }, 1000)
 
 
